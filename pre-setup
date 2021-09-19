@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo apt install git && git clone https://github.com/Deodutt/algo.git
+ 
+cd algo && chmod 700 setup
+./setup && cd .. 
+
+cd venv ; source ./bin/activate
+cd .. && cd algo
+python -m pip install -U pip virtualenv && python -m pip install -r requirements.txt
