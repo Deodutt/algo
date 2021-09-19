@@ -3,7 +3,6 @@
 
 sudo apt install git && git clone https://github.com/Deodutt/algo.git
 
-cd algo
 sudo apt update && sudo apt upgrade
 sudo apt-get update && sudo apt-get install \
 build-essential \
@@ -14,10 +13,4 @@ python3-setuptools \
 pip \
 python3-venv
 
-cd ..
 python3 -m venv venv
-
-
-cd venv ; source ./bin/activate
-cd .. && cd algo
-python -m pip install -U pip virtualenv && python -m pip install -r requirements.txt
