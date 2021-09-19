@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo apt install git && git clone https://github.com/Deodutt/algo.git
- 
 cd algo && chmod 700 setup
 ./setup && cd .. 
 
