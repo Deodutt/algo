@@ -3,7 +3,7 @@
     prompt: |
       Enter your AWS Access Key ID (http://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html)
       Note: Make sure to use an IAM user with an acceptable policy attached (see https://github.com/trailofbits/algo/blob/master/docs/deploy-from-ansible.md)
-    echo: false
+    echo: true
   register: _aws_access_key
   when:
      - aws_access_key is undefined
@@ -12,7 +12,7 @@
 - pause:
     prompt: |
       Enter your AWS Secret Access Key (http://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html)
-    echo: false
+    echo: true
   register: _aws_secret_key
   when:
     - aws_secret_key is undefined
